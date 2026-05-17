@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -22,6 +22,15 @@
     <a href="#shop">Магазин</a>
     <a href="#contact">Контакти</a>
   </nav>
+
+
+  <div class="gender-filters">
+  <button onclick="filterGender('all')">Всички</button>
+  <button onclick="filterGender('female')">Женски</button>
+  <button onclick="filterGender('male')">Мъжки</button>
+</div>
+
+
 </header>
 
 <!-- HERO -->
@@ -51,37 +60,136 @@
 <section id="shop" class="shop">
   <div class="container">
     <h2>Онлайн Магазин</h2>
+    <div class="brand-grid">
 
+  <div class="brand-card" onclick="filterBrand('dior')">
+    <img src="images/brands/dior.png" alt="Dior">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('armani')">
+    <img src="images/brands/armani.png" alt="Armani">
+  </div>
+   
+    <div class="brand-card" onclick="filterBrand('givenchy')">
+    <img src="images/brands/givenchy.png" alt="Givenchy">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('gucci')">
+    <img src="images/brands/gucci.png" alt="Gucci">
+  </div>
+
+    <div class="brand-card" onclick="filterBrand('versace')">
+    <img src="images/brands/versace.jpg" alt="Versace   ">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('ysl')">
+    <img src="images/brands/ysl1.jpg" alt="YSL">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('paco')">
+    <img src="images/brands/paco.jpg" alt="Paco Rabanne">
+  </div> 
+
+
+   <div class="brand-card" onclick="filterBrand('boss')">
+    <img src="images/brands/boss.png" alt="Hugo Boss">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('tomford')">
+    <img src="images/brands/tf.jpg" alt="Tom Ford">
+    </div>
+
+   <div class="brand-card" onclick="filterBrand('burberry')">
+    <img src="images/brands/burberry.jpg" alt="Burberry">
+  </div>
+
+
+    <div class="brand-card" onclick="filterBrand('chanel')">
+    <img src="images/brands/chanel.png" alt="CHANEL">
+  </div>
+
+    <div class="brand-card" onclick="filterBrand('dolce')">
+    <img src="images/brands/dg.png" alt="D&G">
+  </div>
+
+   <div class="brand-card" onclick="filterBrand('polo')">
+    <img src="images/brands/polo.png" alt="Raulph Lauren Polo">
+  </div>
+
+     <div class="brand-card" onclick="filterBrand('Prada')">
+    <img src="images/brands/prada.png" alt="Prada">
+  </div>
+
+      <div class="brand-card" onclick="filterBrand('other')">
+    <img src="images/brands/maison.png" alt="other">
+  </div>
+
+  <div class="brand-card" onclick="filterBrand('all')">
+    <img src="images/brands/all.jpg" alt="All Brands">
+  </div>
+
+</div>
     <div class="products">
 
-      <!-- PRODUCT -->
-      <div class="product">
-        <img src="images/dior/elexir.PNG" alt="Dior Sauvage Elixir">
+<!-- PRODUCT -->
+      <div class="product" data-brand="dior" data-gender="male">
+     <div class="slider">
+  <img src="images/dior/elexir.PNG" class="active">
+  <img src="images/dior/SauvageElexirShow.jpg">
+  <img src="images/dior/ElexirPrice.jpg">
+
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Dior Sauvage Elixir</h3>
         <p>
           <a href="https://douglas.bg/dior-sauvage-elixir-conf-69799" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 60 ml • €177
+          • 60 ml • €259
         </p>
-        <span class="price">€125</span>
-        <button class="btn add-to-cart" data-name="Dior Sauvage Elixir" data-price="125">Add to Cart</button>
+        <span class="price">€175</span>
+        <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Sauvage Elixir" data-price="175">Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="images/dior/parfu,me.PNG" alt="Dior Sauvage Parfum">
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+
+        <img src="images/dior/parfu,me.PNG" class="active">
+        <img src="images/dior/SauvageParfumShow.jpg" >
+        <img src="images/dior/Parfume100Price.jpg">
+
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Dior Sauvage Parfum</h3>
         <p>
           <a href="https://douglas.bg/dior-sauvage-parfum-conf-51176" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 100 ml • €125
+          • 60 ml • €117
         </p>
-        <span class="price">€99</span>
-        <button class="btn add-to-cart" data-name="Dior Sauvage Parfum" data-price="99">Add to Cart</button>
+        <span class="price">€89</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Sauvage Parfum" data-price="89">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/dior/euadeparfum.PNG" alt="Dior Sauvage Eau de Parfum">
+
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/euadeparfum.PNG" class="active">
+        <img src = "images/dior/EDP100Price.jpg">
+
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Dior Sauvage Eau de Parfum</h3>
         <p>
           <a href="https://douglas.bg/dior-sauvage-eau-de-parfum-conf-44913" target="_blank" rel="noopener noreferrer">
@@ -90,22 +198,81 @@
           • 100 ml • €148
         </p>
         <span class="price">€105</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Dior Sauvage Eau de Parfum" data-price="105">Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="images/dior/euaForte.PNG" alt="Dior Sauvage Eau Forte">
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+
+        <img src="images/dior/euaForte.PNG" class="active">
+        <img src="images/dior/SauvageEauForteShow.jpg">
+        <img src="images/dior/EauFortePrice.jpg" >
+
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Dior Sauvage Eau Forte</h3>
         <p>
           <a href="https://douglas.bg/dior-sauvage-eau-forte-conf-84341" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 100 ml • €125
+          • 100 ml • €184
         </p>
-        <span class="price">€99</span>
-        <button class="btn add-to-cart" data-name="Dior Sauvage Eau Forte" data-price="99">Add to Cart</button>
+        <span class="price">€115</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Sauvage Eau Forte" data-price="115">Add to Cart</button>
       </div>
-      <div class="product">
+
+
+
+        <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/diorhomme100.jpg" class="active">
+        <img src="images/dior/diorHommeShow.jpg">
+        <img src="images/dior/diorhomme150Price.jpg">
+
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Dior Homme </h3>
+        <p>
+          <a href="https://douglas.bg/dior-dior-homme-intense-eau-de-parfum-intense-conf-4635 " target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €127
+        </p>
+        <span class="price">€80</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Homme " data-price="80">Add to Cart</button>
+      </div>
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/HommeParfume125.webp" class="active">
+        <img src="images/dior/HommeParfume125Price.jpg">
+        <img src="images/dior/diorHommeParfume125Show.jpg">
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Dior Homme Parfume</h3>
+        <p>
+          <a href="https://douglas.bg/dior-dior-homme-intense-eau-de-parfum-intense-conf-4635 " target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 125 ml • €212
+        </p>
+        <span class="price">€125</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Homme Parfume" data-price="125">Add to Cart</button>
+      </div>
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
         <img src="images/dior/diorHommeIntense.jpg" alt="Dior Homme Intense">
         <h3>Dior Homme Intense</h3>
         <p>
@@ -115,10 +282,23 @@
           • 60 ml • €105
         </p>
         <span class="price">€75</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Dior Homme Intense" data-price="75">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/dior/diorhomesport1.jpg" alt="Dior Homme Sport">
+
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/diorhomesport1.jpg" class="active">
+        <img src="images/dior/diorHommeSport123Show.jpg">
+
+        img src="images/dior/diorHommeParfume125Show.jpg">
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Dior Homme Sport</h3>
         <p>
           <a href="https://douglas.bg/dior-homme-sport-conf-62983" target="_blank" rel="noopener noreferrer">
@@ -127,10 +307,45 @@
           • 125 ml • €140
         </p>
         <span class="price">€105</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Dior Homme Sport" data-price="105">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/dior/diorEAU1.jpg" alt="Dior Eau Sauvage Parfume">
+
+
+      
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/diorHommeSport200.jpg" class="active">
+        <img src="images/dior/2diorHommeSport200Show.jpg">
+
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>Dior Homme Sport</h3>
+        <p>
+          <a href="https://douglas.bg/dior-homme-sport-conf-62983" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 200 ml • €200
+        </p>
+        <span class="price">€135</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Dior Homme Sport" data-price="135">Add to Cart</button>
+      </div>
+
+
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/diorEAU1.jpg" class="active">
+        <img src="images/dior/EauSauvageParfumShow.jpg">
+
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Dior Eau Sauvage Parfume</h3>
         <p>
           <a href="https://makeup.bg/product/302679/ " target="_blank" rel="noopener noreferrer">
@@ -139,10 +354,20 @@
           • 100 ml • €166
         </p>
         <span class="price">€111</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Dior Eau Sauvage Parfume" data-price="111">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/dior/ahrenhait.PNG" alt="Dior Fahrenheit">
+
+
+      <div class="product" data-brand="dior" data-gender="male">
+      <div class="slider">
+        <img src="images/dior/ahrenhait.PNG" class="active">
+        <img src="images/dior/FahrhenheitShow.jpg">
+        
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Dior Fahrenheit</h3>
         <p>
           <a href="https://douglas.bg/dior-fahrenheit-parfum-30342" target="_blank" rel="noopener noreferrer">
@@ -151,11 +376,122 @@
           • 100 ml • €138    
         </p>
         <span class="price">€99</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Dior Fahrenheit" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/armani/strongerIntens.PNG" alt="Stronger with you INTENSLY
-">
+
+
+
+          <div class="product" data-brand="dior" data-gender="female" >
+          <div class="slider">
+          <img src="images/dior/missdiorbox.jpg" class="active">
+          <img src="images/dior/missDiorRoseShow.jpg">
+
+            <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>Miss Dior Rose n'Roses</h3>
+        <p>
+          <a href="https://douglas.bg/dior-miss-dior-rose-n-roses-conf-53678" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 100 ml • €156
+        </p>
+        <span class="price">€99</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="Miss Dior Rose n'Roses" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+          <div class="product" data-brand="dior" data-gender="female" >
+          <div class="slider">
+          <img src="images/dior/bloomingbouquet.jpg" class="active">
+          <img src="images/dior/missDiorBuketShow.jpg">
+          <img src="images/dior/missDiorBuketPrie.jpg">
+
+            <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>Miss Dior Blooming Bouquet</h3>
+        <p>
+          <a href="https://douglas.bg/dior-miss-dior-rose-n-roses-conf-53678" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 100 ml • €156
+        </p>
+        <span class="price">€99</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="Miss Dior Blooming Bouquet" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+      
+          <div class="product" data-brand="dior" data-gender="female" >
+          <div class="slider">
+          <img src="images/dior/jadore.jpg" class="active">
+          <img src="images/dior/jadore50Show.jpg">
+          <img src="images/dior/jadorePrice.jpg">
+
+            <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>J'adore Infinissime</h3>
+        <p>
+          <a href="https://douglas.bg/dior-miss-dior-rose-n-roses-conf-53678" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 50 ml • €130
+        </p>
+        <span class="price">€79</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="J'adore Infinissime" data-price="79">Add to Cart</button>
+      </div>
+
+
+      <div class="product" data-brand="dior" data-gender="female" >
+          <div class="slider">
+          <img src="images/dior/joy.webp" class="active">
+          <img src="images/dior/JoyShow.jpg">
+
+            <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>Joy by Dior</h3>
+        <p>
+          <a href="https://douglas.bg/dior-miss-dior-rose-n-roses-conf-53678" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 90 ml • €164
+        </p>
+        <span class="price">€99</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="Joy by Dior" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class="slider">
+        <img src="images/armani/strongerIntens.PNG" class="active">
+        <img src="images/armani/strongerwithUintenslyPrice.jpg">
+
+    <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Stronger with you INTENSLY</h3>
         <p>
           <a href="https://douglas.bg/emporio-armani-stronger-with-you-intensely-conf-49021" target="_blank" rel="noopener noreferrer">
@@ -164,47 +500,122 @@
           • 150 ml • €165
         </p>
         <span class="price">€115</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Stronger with you INTENSLY" data-price="115">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/armani/stronger parume.PNG" alt="Stronger with you PARFUME">
+
+
+
+
+
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class="slider">
+        <img src="images/armani/stronger parume.PNG" class="active">
+        <img src="images/armani/strongerParfumePrice.jpg">
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Stronger with you PARFUME</h3>
         <p>
           <a href="https://douglas.bg/emporio-armani-stronger-with-you-parfum-conf-86585" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 100 ml • €145
+          • 100 ml • €146
         </p>
         <span class="price">€99</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Stronger with you PARFUME" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/armani/code.PNG" alt="ARMANI CODE">
+     
+      
+      
+      
+      
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class="slider">
+        <img src="images/armani/code.PNG" class="active">
+        <img src="images/armani/codeParfumeShow.jpg">
+        <img src="images/armani/codeParfumePrice.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>ARMANI CODE</h3>
         <p>
           <a href="https://douglas.bg/giorgio-armani-armani-code-le-parfum-conf-67357" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 125 ml / 75ml • €155/€197 
+          • 125 ml  • €197 
         </p>
-        <span class="price">€99</span>
-        <button class="btn add-to-cart" data-name="ARMANI CODE" data-price="99">Add to Cart</button>
+        <span class="price">€125</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="ARMANI CODE" data-price="125">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/armani/blueparume.PNG" alt="ACQUA DI GIO PROFONDO PARFUME">
+      
+
+        
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class="slider">
+        <img src="images/armani/edtcode.webp" class="active">
+        <img src="images/armani/EdtCodeShow.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>ARMANI CODE</h3>
+        <p>
+          <a href="https://douglas.bg/giorgio-armani-code-eau-de-toilette-conf-70535?trac=DO_BG.01.01_Non-Brand.P_Marken.Google.23055124489.186356877256.kwd-299446653550.775816618959.PM&gad_source=1&gad_campaignid=23055124489&gclid=EAIaIQobChMI8cKsrqjEkwMVIICDBx3hAg3fEAAYAiAAEgIXWPD_BwE" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 125 ml  • €150 
+        </p>
+        <span class="price">€89</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="ARMANI CODE" data-price="125">Add to Cart</button>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class="slider">
+        <img src="images/armani/blueparume.PNG" class="active">
+        <img src="images/armani/AcquaDiGioProfondoParfumeShow.jpg">
+        <img src="images/armani/digioParfumePrice.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+
         <h3>ACQUA DI GIO PROFONDO PARFUME</h3>
         <p>
           <a href="https://douglas.bg/giorgio-armani-acqua-di-gio-homme-profondo-parfum-conf-82382" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200ml/100ml • €250/€160
+          •/100ml • €160
         </p>
-        <span class="price">€110</span>
-        <button class="btn add-to-cart" data-name="ACQUA DI GIO PROFONDO PARFUME" data-price="110">Add to Cart</button>
+        <span class="price">€99</span>
+         <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="ACQUA DI GIO PROFONDO PARFUME" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/armani/acquaparfume.jpg" alt="ACQUA DI GIO">
-        <h3>ACQUA DI GIO</h3>
+  
+      
+
+      
+      <div class="product" data-brand="armani" data-gender="male">
+      <div class= "slider">
+
+        <img src="images/armani/acquaparfume.jpg" class="active">
+        <img src="images/armani/white.jpg">
+        <img src="images/armani/belPrice.jpg">
+           <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+<h3> ACQUA DI GIO PARFUME </h3>
         <p>
           <a href="https://www.armani.com/it-it/giorgio-armani/parfum-acqua-di-gio-200-ml-cod-LE311400-NLP-200ML/?xse_prod_code=LE311400_NLP_200ML&xse=f998f418-144e-4b01-bdaf-4cd3fee16125" target="_blank" rel="noopener noreferrer">
             сравни цената
@@ -212,10 +623,47 @@
           • 100 ml • €167
         </p>
         <span class="price">€99</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="ACQUA DI GIO" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/boss/bossHugoIntense.jpg" alt="Hugo Boss Intense">
+
+
+
+       
+      <div class="product" data-brand="armani" data-gender="female">
+      <div class= "slider">
+
+        <img src="images/armani/sipassioneintense.webp" class="active">
+        <img src="images/armani/intensePassioneShow.jpg">
+        <img src="images/armani/passioneintensePrice.jpg">
+           <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+<h3> GIORGIO ARMANI EDP INTENSE PASSIONE </h3>
+        <p>
+          <a href="https://douglas.bg/giorgio-armani-si-passione-intense-conf-84350" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €197
+        </p>
+        <span class="price">€111</span>
+         <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="PASSIONE" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+
+      <div class="product" data-brand="boss" data-gender="male">
+      <div class = "slider">
+
+        <img src="images/parfumes/boss/bossHugoIntense.jpg" class="active">
+        <img src="images/parfumes/boss/bossintense.jpg">
+                   <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Hugo Boss Intense</h3>
         <p>
           <a href="https://douglas.bg/hugo-intense-eau-de-parfum-for-men-conf-81232" target="_blank" rel="noopener noreferrer">
@@ -224,10 +672,21 @@
           • 100 ml • €125
         </p>
         <span class="price">€89</span>
+         <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Hugo Boss Intense" data-price="89">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/boss/hugo-boss-boss-alive-parfum-edp-50ml-за-жени~37536.webp" alt="Hugo Boss Alive">
+
+
+
+
+
+      <div class="product" data-brand="boss" data-gender="female" >
+      <div class="slider">
+        <img src="images/parfumes/boss/hugo-boss-boss-alive-parfum-edp-50ml-за-жени~37536.webp" class = "active">
+        <img src="images/parfumes/boss/alive.jpg">
+           <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Hugo Boss Alive</h3>
         <p>
           <a href="https://prettyshop.bg/products/boss-alive-parfum" target="_blank" rel="noopener noreferrer">
@@ -236,10 +695,22 @@
          Female • 100 ml • €150
         </p>
         <span class="price">€99</span>
+        <span class="female-badge">For Her</span>
         <button class="btn add-to-cart" data-name="Hugo Boss Alive" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Chanel/BleuDeChanel.jpg" alt="BLEU DE CHANEL">
+
+
+
+
+
+      <div class="product" data-brand="chanel" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Chanel/BleuDeChanel.jpg" class="active">
+        <img src="images/parfumes/Chanel/bleu.jpg">
+                 <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>BLEU DE CHANEL</h3>
         <p>
           <a href="https://www.chanel.com/sk/fragrance/p/107180/bleu-de-chanel-parfum-spray/" target="_blank" rel="noopener noreferrer">
@@ -248,10 +719,49 @@
           • 100 ml • €181
         </p>
         <span class="price">€120</span>
+        <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="BLEU DE CHANEL" data-price="120">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/D&G/D&GKing.jpg" alt="D&G King">
+
+
+
+
+         <div class="product" data-brand="chanel" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Chanel/exlusiff.webp" class="active">
+        <img src="images/parfumes/Chanel/exclusiff.jpg">
+                 <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>BLEU DE CHANEL L'Exclusif</h3>
+        <p>
+          <a href="https://www.chanel.com/bg/fragrance/p/107220/bleu-de-chanel-lexclusif/" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a> 
+          • 100 ml / 60 ml • €263/€189
+        </p>
+        <span class="price">€120</span>
+        <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="BLEU DE CHANEL" data-price="120">Add to Cart</button>
+      </div>
+
+
+
+   
+
+
+
+
+      <div class="product" data-brand="dolce"  data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/D&G/D&GKing.jpg" class="active">
+        <img src="images/parfumes/D&G/dolceKgreyShow.jpg">
+        <img src="images/parfumes/D&G/dolceKgrayPrice.jpg">
+
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>D&G King</h3>
         <p>
           <a href="https://douglas.bg/dolce-gabbana-k-parfum-conf-87361" target="_blank" rel="noopener noreferrer">
@@ -260,22 +770,82 @@
           • 100 ml • €150
         </p>
         <span class="price">€99</span>
+                <span class="male-badge">For Him</span>
+
         <button class="btn add-to-cart" data-name="D&G King" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/D&G/dolce-gabbana-the-one-gold-edp-75ml-за-жени~34640.webp" alt="D&G The One">
-        <h3>D&G The One</h3>
+
+
+
+
+       <div class="product" data-brand="dolce" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/D&G/gold.avif" class="active">
+        <img src="images/parfumes/D&G/dolceKgoldShow.jpg">
+     
+
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>D&G King Gold</h3>
+        <p>
+          <a href="https://douglas.bg/dolce-gabbana-k-parfum-conf-87361" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €180
+        </p>
+        <span class="price">€109</span>
+                <span class="male-badge">For Him</span>
+
+        <button class="btn add-to-cart" data-name="D&G King" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+
+
+
+
+        <div class="product" data-brand="dolce" data-gender="female">
+      <div class="slider">
+        <img src="images/parfumes/D&G/dolce-gabbana-the-one-gold-edp-75ml-за-жени~34640.webp" class="active">
+        <img src="images/parfumes/D&G/dolcetheFoneShow.jpg">
+     
+
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>D&G King Gold</h3>
         <p>
           <a href="https://douglas.bg/dolce-gabbana-the-one-conf-5342" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          Female • 100 ml • €150
+          • 100 ml • €150
         </p>
         <span class="price">€99</span>
-        <button class="btn add-to-cart" data-name="D&G The One" data-price="99">Add to Cart</button>
+                <span class="female-badge">For Her</span>
+
+        <button class="btn add-to-cart" data-name="D&G King" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/D&G/D&GQ.webp" alt="D&G Q">
+
+
+
+
+
+
+
+
+
+
+
+      <div class="product" data-brand="dolce" data-gender="female" >
+      <div class="slider">
+        <img src="images/parfumes/D&G/D&GQ.webp" class="active">
+        <img src="images/parfumes/D&G/dgq.jpeg">
+            <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>D&G Q</h3>
         <p>
           <a href="https://douglas.bg/dolce-gabbana-q-parfum-conf-87363" target="_blank" rel="noopener noreferrer">
@@ -284,10 +854,24 @@
         Female  • 100 ml • €170
         </p>
         <span class="price">€110</span>
+                        <span class="female-badge">For Her</span>
+
         <button class="btn add-to-cart" data-name="Dior Sauvage Parfum" data-price="110">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/D&G/dolce-gabbana-the-only-one-intense-eau-de-parfum-za-zheni-100-ml-543260.jpg" alt="D&G The Only One Intense">
+
+
+
+
+
+
+
+      <div class="product" data-brand="dolce" data-gender="female">
+      <div class="slider">
+        <img src="images/parfumes/D&G/dolce-gabbana-the-only-one-intense-eau-de-parfum-za-zheni-100-ml-543260.jpg" class="active">
+        <img src="images/parfumes/D&G/only.jpg">
+              <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>D&G The Only One Intense</h3>
         <p>
           <a href="https://douglas.bg/dolce-gabbana-the-only-one-conf-46115" target="_blank" rel="noopener noreferrer">
@@ -296,10 +880,22 @@
          Female • 100 ml • €160
         </p>
         <span class="price">€100</span>
-        <button class="btn add-to-cart" data-name="D&G the only one" data-price="100">Add to Cart</button>
+        <span class="female-badge">For Her</span>
+
+        <button class="btn add-to-cart" data-name="Dior Sauvage Parfum" data-price="100">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Givenchy/givenchy-gentleman-reserve-privee-parfyumna-voda-za-maje-edp.webp" alt="Givenchy Gentleman Reserve Privee">
+
+
+
+
+
+      <div class="product" data-brand="givenchy" data-gender="male">  
+      <div class="slider">
+        <img src="images/parfumes/Givenchy/givenchy-gentleman-reserve-privee-parfyumna-voda-za-maje-edp.webp" class="active">
+        <img src="images/parfumes/Givenchy/reserve200.jpg">
+          <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Givenchy Gentleman Reserve Privee</h3>
         <p>
           <a href="https://douglas.bg/givenchy-gentleman-reserve-privee-eau-de-parfum-conf-63316/" target="_blank" rel="noopener noreferrer">
@@ -308,10 +904,22 @@
           • 100 ml • €120
         </p>
         <span class="price">€85</span>
-        <button class="btn add-to-cart" data-name="Givenchy Gentleman " data-price="75">Add to Cart</button>
+        <span class="male-badge">For Him</span>
+
+        <button class="btn add-to-cart" data-name="Dior Sauvage Parfum" data-price="85">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Givenchy/givenchy-gentleman-society-ambree-edp-100ml-за-мъже-без-опаковка~38075.webp" alt="Givenchy gentleman society ambree">
+
+
+
+
+
+      <div class="product" data-brand="givenchy" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Givenchy/givenchy-gentleman-society-ambree-edp-100ml-за-мъже-без-опаковка~38075.webp" class="active">
+        <img src="images/parfumes/Givenchy/GentlemanSocietyedpAmbreeShow.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Givenchy gentleman society ambree</h3>
         <p>
           <a href="https://douglas.bg/givenchy-gentleman-society-ambree-conf-87416" target="_blank" rel="noopener noreferrer">
@@ -320,10 +928,21 @@
           • 100 ml • €140
         </p>
         <span class="price">€95</span>
+        <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Givenchy gentleman society ambree" data-price="75">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Givenchy/givenchySocietyTravel.jpg" alt="Givenchy Society Travel">
+
+
+
+
+
+      <div class="product" data-brand="givenchy" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Givenchy/givenchySocietyTravel.jpg" class="active">
+        <img src="images/parfumes/Givenchy/gentlemansocietyTravelShow.jpg">
+<button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Givenchy Society Travel</h3>
         <p>
           <a href="https://douglas.bg/givenchy-gentleman-society-conf-71005" target="_blank" rel="noopener noreferrer">
@@ -332,11 +951,165 @@
           • 60 ml • €145
         </p>
         <span class="price">€99</span>
+        <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Givenchy Society Travel" data-price="99">Add to Cart</button>
       </div>
-    
-      <div class="product">
-        <img src="images/parfumes/Gucci/gucci-guilty-eau-de-parfum-for-men-90ml.avif" alt="Gucci Guilty">
+
+
+
+
+      <div class="product" data-brand="gucci" data-gender="female">
+      <div class="slider">
+        <img src="images/parfumes/Gucci/_Light-gucci-bloom-parfum-100ml.avif" class="active">
+        <img src="images/parfumes/Gucci/gucciBloomParfumeShow.jpg">
+        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Light Gucci Bloom</h3>
+        <p>
+          <a href="https://www.gucci.com/bg/en_gb/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-parfum-100ml-p-827092999990099?srsltid=AfmBOooo3IkSFL9HVV9MZWyRmfWO_6xzrhUdgCX1tq-vULVy-zSXZKLG" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 100 ml • €165
+        </p>
+        <span class="price">€110</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="Light Gucci Bloom" data-price="110">Add to Cart</button>
+      </div>
+
+
+
+         <div class="product" data-brand="gucci" data-gender="female">
+      <div class="slider">
+        <img src="images/parfumes/Gucci/2_6443.webp" class="active">
+        <img src="images/parfumes/Gucci/6_2122.webp">
+        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>GUCCI Flora Gorgeous Jasmine</h3>
+        <p>
+          <a href="https://douglas.bg/gucci-flora-gorgeous-jasmine-eau-de-parfum-conf-67274?trac=DO_BG.01.01_Non-Brand.P_Marken.Google.23055311509.188741259111.kwd-1678617755459.775948130546.PM&gad_source=1&gad_campaignid=23055311509&gbraid=0AAAAABXEjmIapxZs07f_KB62vKkmznUjU&gclid=Cj0KCQjwiJvQBhCYARIsAMjts3KldO0g1aCdBbOf0lmmBnt5MPOiV19_OPmynVPv27TWFAXlPG4AFQwaAtleEALw_wcB" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+         Female • 100 ml • €160
+        </p>
+        <span class="price">€99</span>
+        <span class="female-badge">For Her</span>
+        <button class="btn add-to-cart" data-name="GUCCI Flora Gorgeous Jasmine" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+
+
+
+
+ 
+
+
+       <div class="product" data-brand="gucci" data-gender="female">
+       <div class="slider">
+        <img src="images/parfumes/Gucci/gucciblue.png" class="active">
+        <img src="images/parfumes/Gucci/gucciGFwhiteShow.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Gucci Guilty Love Edition</h3>
+        <p>
+          <a href="https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-love-edition-pour-homme-eau-de-parfum-50ml-p-792643999990099?srsltid=AfmBOorGX5dBfTUO8bZdQNJ6iEFtaxKoxtJF82ImSoYlBwCHPC4KZS_l" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €165
+        </p>
+        <span class="price">€99</span>
+                <span class="female-badge">For Her</span>
+
+        <button class="btn add-to-cart" data-name="Gucci Guilty Love Edition" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+            <div class="product" data-brand="gucci" data-gender="female">
+       <div class="slider">
+        <img src="images/parfumes/Gucci/guccibloom1.png" class="active">
+        <img src="images/parfumes/Gucci/guccibloomShow.jpg">
+        <img src="images/parfumes/Gucci/gucciBloom.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Gucci Bloom </h3>
+        <p>
+          <a href="https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-love-edition-pour-homme-eau-de-parfum-50ml-p-792643999990099?srsltid=AfmBOorGX5dBfTUO8bZdQNJ6iEFtaxKoxtJF82ImSoYlBwCHPC4KZS_l" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €165
+        </p>
+        <span class="price">€99</span>
+                <span class="female-badge">For Her</span>
+
+        <button class="btn add-to-cart" data-name="Gucci Bloom" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+           <div class="product" data-brand="gucci" data-gender="female">
+       <div class="slider">
+        <img src="images/parfumes/Gucci/ambrosia.png" class="active">
+        <img src="images/parfumes/Gucci/20260425_201508.jpg">
+      
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Gucci Bloom Ambrosia </h3>
+        <p>
+          <a href="https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-love-edition-pour-homme-eau-de-parfum-50ml-p-792643999990099?srsltid=AfmBOorGX5dBfTUO8bZdQNJ6iEFtaxKoxtJF82ImSoYlBwCHPC4KZS_l" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €165
+        </p>
+        <span class="price">€99</span>
+                <span class="female-badge">For Her</span>
+
+        <button class="btn add-to-cart" data-name="Gucci Bloom Ambrosia" data-price="99">Add to Cart</button>
+      </div>
+
+
+
+
+
+
+      <div class="product" data-brand="gucci" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Gucci/Light-gucci-guilty-pour-femme-90ml-eau-de-parfum.avif" class="active">
+        <img src="images/parfumes/Gucci/gucciGFwhiteShow.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3> Gucci Guilty pour femme</h3>
+        <p>
+          <a href="https://www.gucci.com/bg/en_gb/pr/beauty/fragrances/fragrances-for-women/gucci-guilty/gucci-guilty-eau-de-parfum-intense-pour-femme-90ml-eau-de-parfum-p-671485999990099?srsltid=AfmBOorCWDc9Wa3v68C6CJdujXL41nHSoU1xkgLiETgo_2AsHATyLaHf" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 90 ml • €165
+        </p>
+        <span class="price">€110</span>
+        <span class="male-badge">For Him</span>
+        <button class="btn add-to-cart" data-name="Gucci Guilty pour femme" data-price="110">Add to Cart</button>
+      </div>
+
+
+
+
+           <div class="product" data-brand="gucci" data-gender="male">
+           <div class="slider">
+        <img src="images/parfumes/Gucci/gucciGman.avif" class="active">
+        <img src="images/parfumes/Gucci/guccishow.jpg">
+        <img src="images/parfumes/Gucci/gucciGPrice.jpg">
+         <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Gucci Guilty</h3>
         <p>
           <a href="https://www.gucci.com/bg/en_gb/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099" target="_blank" rel="noopener noreferrer">
@@ -345,57 +1118,53 @@
           • 90 ml • €185
         </p>
         <span class="price">€99</span>
+        <span class="male-badge">For Him</span>
         <button class="btn add-to-cart" data-name="Gucci Guilty" data-price="99">Add to Cart</button>
       </div>
 
-      
-
-               
 
 
-       <div class="product">
-        <img src="images/parfumes/Gucci/2697696-Gucci-Bloom-Parfum-30-ml.7034ffa9.jpg" alt="Gucci Bloom">
-        <h3>Gucci Bloom</h3>
+
+
+
+
+      <div class="product" data-brand="paco" data-gender="male">
+      <div class="slider">
+           
+        <img src="images/parfumes/PacoRabane/elexir.png" class="active">
+        <img src="images/parfumes/PacoRabane/elexirP.jpg">
+<button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Paco Rabanne 1 million  ELEXIR</h3>
         <p>
-          <a href="https://www.gucci.com/bg/en_gb/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-parfum-100ml-p-827092999990099?srsltid=AfmBOooo3IkSFL9HVV9MZWyRmfWO_6xzrhUdgCX1tq-vULVy-zSXZKLG" target="_blank" rel="noopener noreferrer">
+          <a href="https://douglas.bg/paco-rabanne-1-milion-elixir-conf-63146" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 100 ml • €165
+          • 100 ml • €140
         </p>
-        <span class="price">€110</span>
-        <button class="btn add-to-cart" data-name="Gucci Bloom" data-price="99">Add to Cart</button>
-      </div>
+                <span class="male-badge">For Him</span>
 
-      
-      <div class="product">
-        <img src="images/parfumes/Gucci/Light-gucci-guilty-pour-femme-90ml-eau-de-parfum.avif" alt=" Gucci Guilty pour femme">
-        <h3> Gucci Guilty pour femme</h3>
-        <p>
-          <a href="https://www.gucci.com/bg/en_gb/pr/beauty/fragrances/fragrances-for-women/gucci-guilty/gucci-guilty-eau-de-parfum-intense-pour-femme-90ml-eau-de-parfum-p-671485999990099?srsltid=AfmBOorCWDc9Wa3v68C6CJdujXL41nHSoU1xkgLiETgo_2AsHATyLaHf" target="_blank" rel="noopener noreferrer">
-            сравни цената
-          </a>
-        Female  • 90 ml • €165
-        </p>
-        <span class="price">€110</span>
-        <button class="btn add-to-cart" data-name="Gucci Guilty pour femme" data-price="110">Add to Cart</button>
+        <span class="price">€89</span>
+        <button class="btn add-to-cart" data-name="Paco Rabanne 1 million Parfume" data-price="89">Add to Cart</button>
       </div>
 
 
-      <div class="product">
-        <img src="images/parfumes/PacoRabane/paco-rabanne-1-million-parfum-100ml-за-мъже~33975.webp" alt="Paco Rabanne 1 million Parfume">
-        <h3>Paco Rabanne 1 million Parfume</h3>
-        <p>
-          <a href="https://douglas.bg/paco-rabanne-1-million-conf-10636" target="_blank" rel="noopener noreferrer">
-            сравни цената
-          </a>
-          • 100 ml • €120
-        </p>
-        <span class="price">€75</span>
-        <button class="btn add-to-cart" data-name="Paco Rabanne 1 million Parfume" data-price="100">Add to Cart</button>
-      </div>
 
-      <div class="product">
-        <img src="images/parfumes/PacoRabane/paco-rabanne-1-million-eau-de-toilette-za-mazhe-200-ml-404181.jpg" alt="Paco Rabanne 1 million">
+
+
+
+
+
+      <div class="product" data-brand="paco" data-gender="male">
+      <div class="slider">
+
+        <img src="images/parfumes/PacoRabane/paco-rabanne-1-million-eau-de-toilette-za-mazhe-200-ml-404181.jpg" class="active">
+        <img src="images/parfumes/PacoRabane/1milion200show.jpg">
+        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Paco Rabanne 1 million</h3>
         <p>
           <a href="https://douglas.bg/paco-rabanne-1-million-conf-10636" target="_blank" rel="noopener noreferrer">
@@ -403,29 +1172,25 @@
           </a>
           • 200 ml • €160
         </p>
-        <span class="price">€100</span>
-        <button class="btn add-to-cart" data-name="Paco Rabanne 1 million" data-price="100">Add to Cart</button>
+        <span class="price">€99</span>
+                <span class="male-badge">For Him</span>
+
+        <button class="btn add-to-cart" data-name="Paco Rabanne 1 million" data-price="99">Add to Cart</button>
       </div>
 
    
 
- 
 
-      <div class="product">
-        <img src="images/parfumes/PacoRabane/Phantom.jpg" alt="Paco Rabanne Phantom">
-        <h3>Paco Rabanne Phantom</h3>
-        <p>
-          <a href="https://douglas.bg/paco-rabanne-phantom-edt-conf-59665" target="_blank" rel="noopener noreferrer">
-            сравни цената
-          </a>
-          • 100 ml • €75
-        </p>
-        <span class="price">€50</span>
-        <button class="btn add-to-cart" data-name="Paco Rabanne Phantom" data-price="50">Add to Cart</button>
-      </div>
+      <div class="product" data-brand="ysl" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/YSL/myselfTRAVEL.jpg" class="active">
+        <img src="images/parfumes/YSL/yslMyselfTravelShow.jpg">
+        <img src="images/parfumes/YSL/yslMyselfTravelBakcShow.jpg">
 
-      <div class="product">
-        <img src="images/parfumes/YSL/myselfTRAVEL.jpg" alt="YSL Myself">
+                <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>YSL Myself</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-myslf-eau-de-parfum-conf-74965" target="_blank" rel="noopener noreferrer">
@@ -434,11 +1199,24 @@
           • 100 ml • €150
         </p>
         <span class="price">€100</span>
+                <span class="male-badge">For Him</span>
+
         <button class="btn add-to-cart" data-name="YSL Myself" data-price="100">Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="images/parfumes/YSL/YSL100mlY.avif" alt="YSL Y">
+
+
+
+      <div class="product" data-brand="ysl" data-gender="male">
+      <div class="slider">
+
+        <img src="images/parfumes/YSL/YSL100mlY.avif" class="active">
+        <img src="images/parfumes/YSL/yslYedp100Show.jpg">
+        <img src="images/parfumes/YSL/yslYedp60Show.jpg">
+                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>YSL Y</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-y-eau-de-parfum-conf-50600" target="_blank" rel="noopener noreferrer">
@@ -447,24 +1225,46 @@
           • 60 ml • €125
         </p>
         <span class="price">€90</span>
+                <span class="male-badge">For Him</span>
+
         <button class="btn add-to-cart" data-name="YSL Y" data-price="90">Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="images/parfumes/YSL/ysl-y-le-parfum-parfum-60ml-за-мъже~34851.webp" alt="YSL Y">
+
+
+
+      <div class="product" data-brand="ysl" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/YSL/ysl-y-le-parfum-parfum-60ml-за-мъже~34851.webp" class="active">
+        <img src="images/parfumes/YSL/yslYlaParfumeShow.jpg">
+                                <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>YSL Y</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-y-le-parfum-conf-87568" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €150
+          • 100 ml • €150
         </p>
-        <span class="price">€100</span>
+      
+                <span class="male-badge">For Him</span>
+<span class="price">€100</span>
         <button class="btn add-to-cart" data-name="YSL Y" data-price="100">Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="images/parfumes/YSL/yves_saint_laurent_ysl_perfume_MYSELF_eau_de_parfum_edp_notes.jpg" alt="YSL Myself">
+
+
+
+
+      <div class="product" data-brand="ysl" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/YSL/yves_saint_laurent_ysl_perfume_MYSELF_eau_de_parfum_edp_notes.jpg" class="active">
+                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>YSL Myself</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-myslf-le-parfum-refill-91139" target="_blank" rel="noopener noreferrer">
@@ -472,11 +1272,24 @@
           </a>
           • 200 ml • €200
         </p>
-        <span class="price">€125</span>
+      
+                <span class="male-badge">For Him</span>
+<span class="price">€125</span>
+
         <button class="btn add-to-cart" data-name="YSL Myself" data-price="125">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/TomFord/tfbo50ml.jpg" alt="TomFord Black Orchid">
+
+
+
+      
+      <div class="product" data-brand="tomford" >
+      <div class="slider">
+        <img src="images/parfumes/TomFord/tfbo50ml.jpg" class="active">
+        <img src="images/parfumes/TomFord/tfblack3.jpg">
+                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Tom Ford Black Orchid</h3>
         <p>
           <a href="https://douglas.bg/tom-ford-black-orchid-conf-72930" target="_blank" rel="noopener noreferrer">
@@ -484,71 +1297,200 @@
           </a>
           • 200 ml • €120
         </p>
+
+        <span class="male-badge">For Him</span>
+        <span class="female-badge">For Her</span>
         <span class="price">€75</span>
         <button class="btn add-to-cart" data-name="Tom Ford Black Orchid" data-price="75">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/TomFord/tftl100.jpg" alt="TomFord Tuscan Leather">
+
+
+
+
+
+      <div class="product" data-brand="tomford">
+      <div class="slider">
+        <img src="images/parfumes/TomFord/tftl100.jpg" class="active">
+        <img src="images/parfumes/TomFord/tftuscan1.jpg">
+                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>TomFord Tuscan Leather</h3>
         <p>
           <a href="https://douglas.bg/tom-ford-tuscan-leather-conf-65802" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €350
+          • 100 ml • €350
         </p>
+
+        <span class="male-badge">For Him</span>
+        <span class="female-badge">For Her</span>
         <span class="price">€225</span>
         <button class="btn add-to-cart" data-name="Tom Ford Tuscan Leather" data-price="225">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/RalphLauren/ralphs-club-elixir___230913.webp" alt="RalphLauren Club Elixir">
+
+
+
+      <div class="product" data-brand="polo" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/RalphLauren/ralphs-club-elixir___230913.webp" class="active">
+        <img src="images/parfumes/RalphLauren/ralphElexirShow.jpg">
+                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>RalphLauren Club Elixir</h3>
         <p>
           <a href="https://www.notino.bg/ralph-lauren/ralphs-club-elixir-parfjumna-voda-za-mzhe/" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €140
+          • 100 ml • €140
         </p>
         <span class="price">€100</span>
+                <span class="male-badge">For Him</span>
+
         <button class="btn add-to-cart" data-name="RalphLauren Club Elixir" data-price="100">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/prada/PradaOceanTravel.webp" alt="Prada Ocean Travel">
+      
+
+
+
+            <div class="product" data-brand="polo" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/RalphLauren/rl_frag_ralphs_club_ny_edp_launch_25_pdp_atf_110ml_withcarton_2000x2000_3605973038189.jpg" class="active">
+        <img src="images/parfumes/RalphLauren/ralphNewYorkShow.jpg">
+                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>RalphLauren Club Elixir</h3>
+        <p>
+          <a href="https://www.ralphlauren.eu/bg/en/men/explore/ralphs-club-new-york/1301043?srsltid=AfmBOorDR5UcknL0nPg_k1FTJQ22EcqY6IhVa49qn9GWu6T9mxtO6H-M" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €140
+        </p>
+        <span class="price">€100</span>
+                <span class="male-badge">For Him</span>
+
+        <button class="btn add-to-cart" data-name="RalphLauren Club Elixir" data-price="100">Add to Cart</button>
+      </div>
+      
+  
+
+      
+      
+      <div class="product" data-brand="Prada" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/prada/PradaOceanTravel.webp" class="active">
+        <img src="images/parfumes/prada/pradaOceanLunaRosaShow.jpg">
+                                                <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Prada Ocean Travel</h3>
         <p>
           <a href="https://douglas.bg/prada-luna-rossa-ocean-eau-de-parfum-conf-72492" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €140
+          • 100 ml • €140
         </p>
-        <span class="price">€100</span>
+      
+                <span class="male-badge">For Him</span>
+<span class="price">€100</span>
         <button class="btn add-to-cart" data-name="Prada Ocean Travel" data-price="100">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/versace/versaceErsos.jpg" alt="Versace Ersos">
+
+
+        
+      
+
+      <div class="product" data-brand="Prada" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/prada/2_342.png" class="active">
+        <img src="images/parfumes/prada/pradaParadigmeShow.jpg">
+                                                <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
+        <h3>Prada Paradigme</h3>
+        <p>
+          <a href="https://douglas.bg/prada-paradigme-conf-89557" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 100 ml • €140
+        </p>
+      
+                <span class="male-badge">For Him</span>
+<span class="price">€100</span>
+        <button class="btn add-to-cart" data-name="Prada Paradigme" data-price="100">Add to Cart</button>
+      </div>
+
+
+
+
+
+
+      <div class="product" data-brand="versace" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/versace/versaceErsos.jpg" class="active">
+        <img src="images/parfumes/versace/versaceEros.jpg">
+        <img src="images/parfumes/versace/versaceEros2.jpg">
+
+                                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Versace Ersos</h3>
         <p>
           <a href="https://douglas.bg/versace-eros-eau-de-parfum-conf-56987" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €65
+          • 100 ml • €120
         </p>
-        <span class="price">€45</span>
-        <button class="btn add-to-cart" data-name="Versace Eros" data-price="45">Add to Cart</button>
+
+        <span class="male-badge">For Him</span>
+        <span class="price">€75</span>
+        <button class="btn add-to-cart" data-name="Versace Eros" data-price="75">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Other/BurberryHero.webp" alt=" BurberryHero  Hero ">
+
+
+
+
+
+      <div class="product" data-brand="burberry"  data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Other/BurberryHero.webp" class="acitve">
+        <img src="images/parfumes/Other/HeroShow.jpg">
+        <img src="images/parfumes/Other/HeroPrice.jpg">
+        
+                                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>Burberry Hero</h3>
         <p>
           <a href="https://douglas.bg/burberry-hero-parfum-for-men-conf-80977" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €150
+          • 100 ml • €150
         </p>
-        <span class="price">€100</span>
-        <button class="btn add-to-cart" data-name="BurberryHero" data-price="100">Add to Cart</button>
+        <span class="male-badge">For Him</span>
+        <span class="price">€99</span>
+        <button class="btn add-to-cart" data-name="BurberryHero" data-price="99">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Other/jean-paul-gaultier-le-male-eau-de-toilette-125ml.webp" alt="">
+
+
+
+
+      <div class="product" data-brand="other" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/other/jean-paul-gaultier-le-male-eau-de-toilette-125ml.webp" class="active">
+             
+                                                        <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+
         <h3>JeanPaul Gaultier</h3>
         <p>
           <a href="https://douglas.bg/jean-paul-gaultier-le-male-conf-07944" target="_blank" rel="noopener noreferrer">
@@ -556,76 +1498,134 @@
           </a>
           • 125 ml • €100
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€70</span>
-        <button class="btn add-to-cart" data-name="JeanPaul" data-price="70">Add to Cart</button>
+        <button class="btn add-to-cart" data-name="Dior Homme Sport" data-price="70">Add to Cart</button>
       </div>
-    
-      <div class="product">
-        <img src="images/parfumes/Other/dsquared2-green-wood-edt-50ml-за-мъже~33507.webp" alt="Green Wood">
+
+
+
+
+
+      <div class="product" data-brand="other" data-gender="female">
+<div class="slider">
+        <img src="images/parfumes/other/redWood50ml.PNG" class="active">
+                                                       <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
+        <h3>Dsquared2 Red Wood</h3>
+        <p>
+          <a href="https://www.dsquared2.com/bg/en/red-wood-50ml/FR5C30EUR010070.html" target="_blank" rel="noopener noreferrer">
+            сравни цената
+          </a>
+          • 50 ml • €70
+        </p>
+                <span class="female-badge">For Her</span>
+<span class="price">€40</span>
+        <button class="btn add-to-cart" data-name=" Red Wood" data-price="40">Add to Cart</button>
+      </div>
+
+
+
+
+      <div class="product" data-brand="other" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Other/dsquared2-green-wood-edt-50ml-за-мъже~33507.webp" class="active">
+                                                               <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Dsquared2 Green Wood</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-myslf-le-parfum-refill-91139" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €80
+          •50 ml • €80
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€40</span>
         <button class="btn add-to-cart" data-name="Dsquared2 Green Wood" data-price="40">Add to Cart</button>
       </div>
 
-       <div class="product">
-        <img src="images/parfumes/Other/redWood50ml.png" alt="Red Wood">
-        <h3>Dsquared2 Green Wood</h3>
-        <p>
-          <a href="https://www.dsquared2.com/bg/en/red-wood-50ml/FR5C30EUR010070.html" target="_blank" rel="noopener noreferrer">
-            сравни цената
-          </a>
-          • 50 ml • €80
-        </p>
-        <span class="price">€40</span>
-        <button class="btn add-to-cart" data-name="Dsquared2 red Wood" data-price="40">Add to Cart</button>
-      </div>
 
-      
-      
-      <div class="product">
-        <img src="images/parfumes/Other/thereDhermess200ml.avif" alt="Terre D'Hermess">
+
+
+      <div class="product" data-brand="other" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Other/thereDhermess200ml.avif" class="active">
+         <img src="images/parfumes/Other/terreDhermesAfterShaveShow.jpg">
+         <img src="images/parfumes/Other/terreDhermesEdpShow.jpg">
+                                                                  <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Terre D'Hermess</h3>
+
         <p>
           <a href="https://douglas.bg/hermes-terre-d-hermes-parfum-conf-31722" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
           • 200 ml • €225
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€125</span>
         <button class="btn add-to-cart" data-name="Terre D'Hermess" data-price="125">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Other/terre-d-hermes-parfum--107757V0-worn-3-0-0-800-800_g.webp" alt="Terre D'Hermess">
+
+
+
+
+
+      <div class="product" data-brand="other" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Other/terre-d-hermes-parfum--107757V0-worn-3-0-0-800-800_g.webp" class="active">
+        <img src="images/parfumes/Other/terredhermesTravelShow.jpg">
+                              <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Terre D'Hermess</h3>
         <p>
           <a href="https://douglas.bg/hermes-terre-d-hermes-parfum-conf-31722" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €200
+          • 100 ml • €200
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€125</span>
         <button class="btn add-to-cart" data-name="Terre D'Hermess" data-price="125">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/Other/vetiver-parfum___240412.webp" alt="Vetiver de Guerlain">
+
+
+
+
+
+      <div class="product" data-brand="Other" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/Other/vetiver-parfum___240412.webp" class="active">
+        <img src="images/parfumes/Other/guerlainidealEstremeShow3.jpg">
+                              <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>Vetiver de Guerlain</h3>
         <p>
           <a href="https://www.notino.bg/guerlain/vetiver-parfum-parfjum-za-mzhe/" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €125
+          • 100 ml • €125
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€90</span>
         <button class="btn add-to-cart" data-name="Vetiver de Guerlain" data-price="90">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/YSL/yves_saint_laurent_ysl_perfume_MYSELF_eau_de_parfum_edp_notes.jpg" alt="YSL Myself">
+
+
+
+
+
+      <div class="product" data-brand="ysl" data-gender="male">
+      <div class="slider">
+        <img src="images/parfumes/YSL/yves_saint_laurent_ysl_perfume_MYSELF_eau_de_parfum_edp_notes.jpg" class="active">
+                              <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>YSL Myself</h3>
         <p>
           <a href="https://douglas.bg/yves-saint-laurent-myslf-le-parfum-refill-91139" target="_blank" rel="noopener noreferrer">
@@ -633,18 +1633,29 @@
           </a>
           • 200 ml • €200
         </p>
+        <span class="male-badge">For Him</span>
         <span class="price">€125</span>
         <button class="btn add-to-cart" data-name="YSL Myself" data-price="125">Add to Cart</button>
       </div>
-      <div class="product">
-        <img src="images/parfumes/JimmyChoo/IwantChoo.jpg" alt="JimmyChoo IwantChoo">
+
+
+
+
+
+      <div class="product" data-brand="other" data-gender="female">
+      <div class="slider">
+        <img src="images/parfumes/JimmyChoo/IwantChoo.jpg" class="active">
+                              <button class="prev">‹</button>
+  <button class="next">›</button>
+</div>
         <h3>JimmyChoo IwantChoo</h3>
         <p>
           <a href="https://douglas.bg/jimmy-choo-i-want-choo-le-parfum-conf-83863" target="_blank" rel="noopener noreferrer">
             сравни цената
           </a>
-          • 200 ml • €145
+          • 100 ml • €145
         </p>
+        <span class="female-badge">For Her</span>
         <span class="price">€95</span>
         <button class="btn add-to-cart" data-name="JimmyChoo IwantChoo" data-price="95">Add to Cart</button>
       </div>
