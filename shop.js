@@ -7,7 +7,46 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
+
+
 }
+function filterBrand(brand){
+
+  const products = document.querySelectorAll(".product");
+
+  products.forEach(product => {
+
+    if(brand === "all"){
+      product.style.display = "block";
+    }
+
+    else if(product.dataset.brand.toLowerCase() === brand.toLowerCase()){
+      product.style.display = "block";
+    }
+
+    else{
+      product.style.display = "none";
+    }
+
+  });
+
+}
+
+
+function filterGender(gender) {
+  const products = document.querySelectorAll(".product");
+
+  products.forEach(product => {
+    if (gender === "all") {
+      product.style.display = "block";
+    } else if (product.dataset.gender === gender) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+
 
 function toggleCart() {
     document.getElementById("cart-panel").classList.toggle("open");
@@ -62,6 +101,50 @@ window.removeFromCart = function(index) {
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
 
+    // SLIDER
+   // SLIDER
+document.querySelectorAll(".slider").forEach(slider => {
+  let images = slider.querySelectorAll("img");
+  let current = 0;
+
+  const nextBtn = slider.querySelector(".next");
+  const prevBtn = slider.querySelector(".prev");
+
+  function showImage(index) {
+    images.forEach(img => img.classList.remove("active"));
+    images[index].classList.add("active");
+  }
+
+  nextBtn.addEventListener("click", () => {
+    current = (current + 1) % images.length;
+    showImage(current);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    current = (current - 1 + images.length) % images.length;
+    showImage(current);
+  });
+
+  // TOUCH (SWIPE)
+  let startX = 0;
+
+  slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+
+    if (endX < startX - 50) {
+      nextBtn.click();
+    } else if (endX > startX + 50) {
+      prevBtn.click();
+    }
+  });
+});
+
+
+
     // Add-to-cart buttons
     document.querySelectorAll(".add-to-cart").forEach(button => {
         button.addEventListener("click", () => {
@@ -83,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (cartPanel.classList.contains("open") &&
             !cartPanel.contains(event.target) &&
             !cartIcon.contains(event.target)) {
-            cartPanel.classList.remove("open"); // Close the cart
+            cartPanel.classList.remove("open"); // Close the cartdocument.querySelectorAll
         }
     });
     
@@ -119,9 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
 
-});
 
 // ===============================
 // INITIALIZE
 // ===============================
 updateCartDisplay();
+
+});
