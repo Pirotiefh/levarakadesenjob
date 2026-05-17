@@ -10,8 +10,33 @@ background-image: url("images/bg.jpeg");
     background-position: top left;
     padding-top: 80px; /* height of header */
 }
-      
-{
+.brand-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.brand-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.brand-card img{
+  max-width:100px;
+}
+
+.brand-card:hover{
+  transform:scale(1.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}    
+*{
     box-sizing: border-box;
 }
 
@@ -72,7 +97,7 @@ nav a:hover {
     text-align: center;
     padding: 0 20px;
 
-background: transparent; !important;
+background: transparent !important;
 }
       
       
@@ -92,7 +117,7 @@ background: transparent; !important;
 }
 .shop {
   background: transparent; !important;
-    );
+    
   padding: 120px 0;
 }
 .shop .container {
@@ -163,6 +188,16 @@ section {
 }
 
 .product {
+  position: relative;
+}
+
+.product[data-gender="female"] {
+  border: 2px solid #ff4da6;
+  box-shadow: 0 0 20px rgba(255, 77, 166, 0.5);
+  background: linear-gradient(180deg, #fff, #fff0f6);
+}
+
+.product {
     background: white;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     padding: 20px;
@@ -170,11 +205,57 @@ section {
     width: 280px;
     text-align: center;
 }
-
+.product[data-gender="male"] {
+  border: 2px solid #3399ff;
+  box-shadow: 0 0 15px rgba(51, 153, 255, 0.4);
+}
 .product img {
     width: 100%;
+     height: 220px;
+    object-fit: contain;
     border-radius: 8px;
 }
+.gender-filters {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.gender-filters button {
+  background: #8d6b38;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.gender-filters button:hover {
+  background: #72562d;
+}
+.female-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4da6;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.male-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #3399ff;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
 
 .price {
     display: block;
@@ -316,11 +397,6 @@ section {
     width: 100%;
     margin-top: 10px;
 }
-img {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
 @media (max-width: 768px) {
     .hero-text h1 {
       font-size: 36px;
@@ -337,3 +413,35 @@ img {
     color: #aaa;
   }
   
+  .slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.slider .prev { left: 5px; }
+.slider .next { right: 5px; }
